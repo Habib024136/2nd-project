@@ -99,6 +99,65 @@ main{
     font-size: 2.9rem;
     font-weight: 700;
 }
+
+/*features*/
+
+
+.features{
+    margin-top: 130px;
+    display:flex;
+    gap:100px;
+    padding: 30px;
+
+}
+.feature-title{
+    color: var(--dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    border-left: 5px solid #FF900E ;
+    padding-left: 20px;
+}
+.info-title{
+    color: var(--dark-01, #131313);
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.feature-info{
+    padding: 30px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+     margin-bottom: 10px;
+}
+.feature-container{
+    margin-bottom: 20px;
+}
+.ten-year{
+    border-radius: 15px;
+    width: 20rem;
+    background-color: #FF900E;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    bottom:100px;
+}
+.ten-year >p{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 1.5rem;
+font-style: normal;
+
+}
+.ten-year>h2{
+    font-size: 4rem;
+}
 /*facti*/
 .fact-container{
     display: flex;
@@ -124,6 +183,18 @@ main{
     margin-top: 5px;
     font-weight: 350;
 }
+.architect{
+    height: 90%;
+    margin-left: 50px;
+}
+.feature-des{
+    color: var(--dark-03, #727272);
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
 /* sponsor */
 .sponsor{
     text-align: center;
@@ -144,7 +215,7 @@ main{
         padding:20px;
      }
     nav,
-    .teams-container,.fact-container,.sponsor-img
+    .teams-container,.fact-container,.sponsor-img,.features
     {
         flex-direction: column;
     }
@@ -158,6 +229,18 @@ main{
     .fact-container{
         gap:18px;
     }
+    .architect{
+        width:100%;
+        margin-left: 0;
+    }
+    .ten-year,p{
+        width: 100%;
+        padding:0;
+        
+        bottom:0;
+        text-align: center;
+
+    }
    
 }
 /*tablet*/
@@ -167,7 +250,7 @@ main{
     header{
         padding:49px;
     } 
-    nav,.teams-container,.fact-container{
+    nav,.teams-container,.fact-container,.features{
         flex-direction: column;
     } 
 }
